@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="DwarfPlanetsController">
+  <children>
+    <RadioButton fx:id="ceresRadioButton" focusTraversable="false" layoutX="28.0" layoutY="78.0" mnemonicParsing="false" onAction="#ceresRadioButtonListener" onMouseClicked="#ceresRadioButtonListener" selected="true" text="Ceres" wrapText="true">
+      <toggleGroup>
+        <ToggleGroup fx:id="dwarfPlanetsToggleGroup" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="erisRadioButton" layoutX="29.0" layoutY="111.0" mnemonicParsing="false" onAction="#erisRadioButtonListener" onMouseClicked="#erisRadioButtonListener" selected="false" text="Eris" toggleGroup="$dwarfPlanetsToggleGroup" wrapText="true" />
+    <RadioButton fx:id="haumeaRadioButton" layoutX="29.0" layoutY="145.0" mnemonicParsing="false" onAction="#haumeaRadioButtonListener" onMouseClicked="#haumeaRadioButtonListener" selected="false" text="Haumea" toggleGroup="$dwarfPlanetsToggleGroup" wrapText="true" />
+    <RadioButton fx:id="makemakeRadioButton" layoutX="29.0" layoutY="180.0" mnemonicParsing="false" onAction="#makemakeRadioButtonListener" onMouseClicked="#makemakeRadioButtonListener" selected="false" text="Makemake" toggleGroup="$dwarfPlanetsToggleGroup" wrapText="true" />
+    <RadioButton fx:id="plutoRadioButton" layoutX="29.0" layoutY="215.0" mnemonicParsing="false" onAction="#plutoRadioButtonListener" onMouseClicked="#plutoRadioButtonListener" selected="false" text="Pluto" toggleGroup="$dwarfPlanetsToggleGroup" wrapText="true" />
+    <ImageView fx:id="dwarfPlanetsImageView" fitHeight="200.0" fitWidth="200.0" layoutX="134.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@Ceres.png" />
+      </image>
+    </ImageView>
+    <Label fx:id="discoveredByLabel" labelFor="$discoveredByLabel" layoutX="345.0" layoutY="82.0" text="Discovered By:" />
+    <Label fx:id="dateOfDiscoveryLabel" labelFor="$dateOfDiscoveryLabel" layoutX="345.0" layoutY="115.0" text="Date of Discovery:" />
+    <Label fx:id="orbitPeriodLabel" labelFor="$orbitPeriodLabel" layoutX="345.0" layoutY="145.0" text="Orbit Period:" />
+    <Label fx:id="lengthOfDayLabel" labelFor="$lengthOfDayLabel" layoutX="345.0" layoutY="176.0" text="Length of Day:" />
+    <Label fx:id="namedAfterLabel" labelFor="$namedAfterLabel" layoutX="345.0" layoutY="205.0" text="Named After:" />
+    <Label focusTraversable="false" layoutX="450.0" layoutY="82.0" text="" />
+    <Label layoutX="473.0" layoutY="115.0" text="" />
+    <Label layoutX="434.0" layoutY="145.0" text="" />
+    <Label layoutX="450.0" layoutY="176.0" text="" />
+    <Label alignment="TOP_LEFT" contentDisplay="LEFT" focusTraversable="false" layoutX="439.0" layoutY="205.0" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="45.0" prefWidth="160.0" text="" textAlignment="LEFT" textOverrun="ELLIPSIS" underline="false" wrapText="true">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
